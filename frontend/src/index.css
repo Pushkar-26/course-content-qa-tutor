@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f8fafc;
+  color: #111827;
+}
+
+/* Dark mode: main layout */
+html[data-theme="dark"] body,
+html[data-theme="dark"] #root {
+  background: #0b1120;
+  color: #e5e7eb;
+}
+
+html[data-theme="dark"] .chat-page,
+html[data-theme="dark"] .chat-page-main,
+html[data-theme="dark"] .chat-layout,
+html[data-theme="dark"] .chat-window,
+html[data-theme="dark"] .messages,
+html[data-theme="dark"] .document-library {
+  background-color: #0b1120;
+  color: #e5e7eb;
+}
+
+/* Sidebar, topbar and panels */
+html[data-theme="dark"] .sidebar,
+html[data-theme="dark"] .topbar,
+html[data-theme="dark"] .source-panel,
+html[data-theme="dark"] .document-list,
+html[data-theme="dark"] .document-card {
+  background-color: #111827;
+  color: #e5e7eb;
+  border-color: #293548;
+}
+
+/* Chat composer */
+html[data-theme="dark"] .composer-area,
+html[data-theme="dark"] .composer {
+  background-color: #111827;
+  color: #e5e7eb;
+  border-color: #293548;
+}
+
+html[data-theme="dark"] .composer textarea,
+html[data-theme="dark"] .search-box input,
+html[data-theme="dark"] .answer-mode-control select {
+  background-color: #1e293b;
+  color: #e5e7eb;
+  border-color: #374151;
+}
+
+html[data-theme="dark"] .composer textarea::placeholder,
+html[data-theme="dark"] .search-box input::placeholder {
+  color: #94a3b8;
+}
+
+/* Sidebar controls */
+html[data-theme="dark"] .history-item,
+html[data-theme="dark"] .side-link,
+html[data-theme="dark"] .scope-btn,
+html[data-theme="dark"] .profile-btn,
+html[data-theme="dark"] .icon-btn {
+  color: #e5e7eb;
+}
+
+html[data-theme="dark"] .history-item:hover,
+html[data-theme="dark"] .side-link:hover,
+html[data-theme="dark"] .icon-btn:hover,
+html[data-theme="dark"] .profile-btn:hover {
+  background-color: #263244;
+}
+
+html[data-theme="dark"] .history-label,
+html[data-theme="dark"] .scope-label,
+html[data-theme="dark"] .library-description,
+html[data-theme="dark"] .document-info p,
+html[data-theme="dark"] .composer-hint,
+html[data-theme="dark"] .empty-chat p {
+  color: #9ca3af;
+}
+
+/* Document library and empty states */
+html[data-theme="dark"] .library-header h1,
+html[data-theme="dark"] .document-list-header h2,
+html[data-theme="dark"] .document-info h3,
+html[data-theme="dark"] .library-empty h3 {
+  color: #e5e7eb;
+}
+
+html[data-theme="dark"] .document-card {
+  border-color: #293548;
+}
+/* Fix AI response readability in dark mode */
+html[data-theme="dark"] .assistant-message .assistant-content {
+  color: #e5e7eb;
+}
+
+/* Keep answer text readable inside spans */
+html[data-theme="dark"] .assistant-message .assistant-content span {
+  color: inherit;
+}
+
+/* Make citation buttons suit the dark theme */
+html[data-theme="dark"] .assistant-message .citation-chip {
+  background: #312e81;
+  color: #e0e7ff;
+  border: 1px solid #6366f1;
+}
+
+/* Clear hover state for citations */
+html[data-theme="dark"] .assistant-message .citation-chip:hover {
+  background: #4338ca;
+  color: #ffffff;
+}

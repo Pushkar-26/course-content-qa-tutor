@@ -1,0 +1,25 @@
+.env
+venv/
+__pycache__/
+*.pyc
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Python
+**/venv/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Frontend dependencies and build files
+**/node_modules/
+**/dist/
+
+# Uploaded user documents
+data/uploads/
+backend/data/uploads/
+
+# Local editor settings
+.vscode/

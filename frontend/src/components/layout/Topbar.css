@@ -1,0 +1,77 @@
+
+.topbar {
+  height: 60px;
+  flex-shrink: 0;
+  border-bottom: 1px solid #e5e7eb;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.scope-selector,
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.scope-label {
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.scope-btn,
+.icon-btn,
+.profile-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.scope-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #111827;
+}
+
+.topbar-actions {
+  gap: 8px;
+}
+
+.icon-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 9px;
+  display: grid;
+  place-items: center;
+  color: inherit;
+  transition: background 0.2s, color 0.2s;
+}
+
+.icon-btn:hover,
+.profile-btn:hover {
+  background: #f3f4f6;
+}
+
+.icon-btn:focus-visible,
+.profile-btn:focus-visible,
+.scope-btn:focus-visible {
+  outline: 2px solid #6366f1;
+  outline-offset: 2px;
+}
+
+.profile-btn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 10px;
+  border-radius: 9px;
+  font-size: 13px;
+  color: #111827;
+  transition: background 0.2s, color 0.2s;
+}
